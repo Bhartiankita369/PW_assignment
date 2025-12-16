@@ -1,6 +1,8 @@
 CREATE DATABASE company_db;
 USE company_db;
 
+-- Q1. Create a New Database and  Table for Employees 
+
 CREATE TABLE employees (
 	employee_id INT PRIMARY KEY,
 	first_name VARCHAR(50),
@@ -9,7 +11,9 @@ CREATE TABLE employees (
     salary INT,
     hire_date DATE 
     );
-    
+
+-- Q2. Insert Data into Employees Table Task: Insert the following sample records into the table. 
+
 INSERT INTO employees 
 (employee_id, first_name, last_name, department, salary, hire_date)
 VALUES
@@ -66,7 +70,7 @@ WHERE customer_name = 'Aditi';
 -- Primary Key                                            Foreign Key
    -- Unique identified each row in a table                Links one table to another
    -- Cannot be NULL                                       Can be NULL 
-   -- One per table							               Can have many per table 
+   -- One per table							             Can have many per table 
 
 
 -- Q10. What Are Constraints in SQL and Why Are They Used?
