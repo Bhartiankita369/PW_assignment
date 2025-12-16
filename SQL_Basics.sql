@@ -63,7 +63,7 @@ SELECT * FROM sales
 WHERE customer_name = 'Aditi';
 
 -- Q9. What is the Difference Between a Primary Key and a Foreign Key?
--- Primary Key                                        -- Foreign Key
+-- Primary Key                                            Foreign Key
    -- Unique identified each row in a table                Links one table to another
    -- Cannot be NULL                                       Can be NULL 
    -- One per table							               Can have many per table 
