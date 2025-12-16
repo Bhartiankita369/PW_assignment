@@ -3,10 +3,10 @@ USE CompanyDB;
 
 CREATE TABLE Employees (
     EmpID INT PRIMARY KEY,
-    EmpName VARCHAR(50) NOT NULL,
-    Department VARCHAR(30) NOT NULL,
+    EmpName VARCHAR(50),
+    Department VARCHAR(30),
     City VARCHAR(30),
-    Salary INT CHECK (Salary > 0),
+    Salary INT,
     HireDate DATE
 );
 INSERT INTO Employees VALUES
@@ -24,43 +24,43 @@ INSERT INTO Employees VALUES
 -- Q1 : Show employees working in either the ‘IT’ or ‘HR’ departments.
 
 Select * FROM Employees
-where Department = 'IT' OR Department ='HR' ;
+where Department = 'IT' OR Department ='HR';
 
 -- Q2 : Retrieve employees whose department is in ‘Sales’, ‘IT’, or ‘Finance’.
 
 Select * FROM Employees
-where Department IN ('IT', 'Sales', 'Finance') ;
+where Department IN ('IT', 'Sales', 'Finance');
 
 -- Q3 : Display employees whose salary is between ₹50,000 and ₹70,000.
 
 SELECT * FROM Employees 
-WHERE Salary BETWEEN '50000' and '70000' ;
+WHERE Salary BETWEEN '50000' and '70000';
 
 -- Q4 : List employees whose names start with the letter ‘A’. 
 
 SELECT * FROM Employees 
-WHERE Empname LIKE  'A%' ;
+WHERE Empname LIKE  'A%';
 
 -- Q5 : Find employees whose names contain the substring ‘an’.
 
 SELECT * FROM Employees 
-WHERE Empname LIKE  '%an%' ;
+WHERE Empname LIKE  '%an%';
 
 -- Q6 : Show employees who are from ‘Delhi’ or ‘Mumbai’ and earn more than ₹55,000.
 
 SELECT * FROM Employees 
-WHERE City = 'Mumbai'  OR  City = 'Delhi'  AND  salary > 55000 ;
+WHERE City = 'Mumbai'  OR  City = 'Delhi'  AND  salary > 55000;
 
 -- Q7 : Display all employees except those from the ‘HR’ department. 
 
 SELECT * FROM Employees 
-WHERE Department  !=  'HR' ;
+WHERE Department  !=  'HR';
 
 -- Q8 : Get all employees hired between 2019 and 2022, ordered by HireDate (oldest first).
 
 SELECT * FROM Employees 
 WHERE HireDate BETWEEN  '2019-01-01'  AND  '2022-12-31'
-ORDER BY HireDate ASC ;
+ORDER BY HireDate ASC;
 
 
 
