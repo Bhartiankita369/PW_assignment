@@ -1,7 +1,7 @@
+-- Q1. Create a New Database and  Table for Employees 
+
 CREATE DATABASE company_db;
 USE company_db;
-
--- Q1. Create a New Database and  Table for Employees 
 
 CREATE TABLE employees (
 	employee_id INT PRIMARY KEY,
