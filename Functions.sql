@@ -28,7 +28,6 @@ SELECT student_id, name, score,
 NTILE(4) OVER (ORDER BY score DESC) AS performance_group
 FROM Student_Performance;
 
-
 -- Question 6 : For each course, assign a row number based on attendance (highest first).
 SELECT course, attendance,
 ROW_NUMBER() OVER (ORDER BY attendance DESC) as rn
