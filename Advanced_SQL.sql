@@ -31,7 +31,8 @@ INSERT INTO Sales VALUES
 SELECT * FROM products
 SELECT * FROM sales
 
--- Q6. Write a CTE to calculate the total revenue for each product 
+
+    -- Q6. Write a CTE to calculate the total revenue for each product 
  -- (Revenues = Price × Quantity), and return only products where  revenue > 3000. 
 
 WITH ProductRevenue AS (
@@ -46,6 +47,7 @@ SELECT
 FROM ProductRevenue
 WHERE Revenue > 3000;
 
+
 -- Q7. Create a view named that shows: Category, TotalProducts, AveragePrice.
 CREATE VIEW CategorySummary AS
 SELECT Category,
@@ -58,7 +60,7 @@ SELECT * FROM CategorySummary;
 
 
 -- Q8. Create an updatable view containing ProductID, ProductName, and Price.
- -- Then update the price of ProductID = 1 using the view.
+-- Then update the price of ProductID = 1 using the view.
 CREATE VIEW ProductPriceView AS
 SELECT ProductID, ProductName, Price
 FROM Products;
